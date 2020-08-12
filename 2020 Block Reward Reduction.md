@@ -66,7 +66,7 @@ According to Etherscan, uncle rewards are responsible for approximately 5% of th
 
 Thus, we arrive at a rate of 0.55 ETH base block reward to match Bitcoin’s inflation rate. 
 
-We also note however, that the transaction fee market for Ethereum has risen sharply this year. As of August 11 2020, at the time of publishing this EIP, the fees from transactions make up almost 80% the current block rewards (2ETH). Thus, even if the block reward was set to ZERO, miners would still earn 1.8ETH from transaction fees per block.  We thus prepose to round to round down our block reward calculation from 0.55 to 0.5, which means (at the time of writing) miners would earn 1.8ETH in fees + 0.5ETH block reward, for a total of 2.3ETH per block. 
+We further note however, that the transaction fee market for Ethereum has risen sharply this year. As of August 11 2020, at the time of publishing this EIP, the fees from transactions make up almost 80% the current block rewards (2ETH). Thus, even if the block reward was set to zero, miners would still earn 1.8ETH from transaction fees per block.  Due to a robust and thriving fee market, we prepose to round to round down our block reward calculation from 0.55 to 0.5, which means (at the time of writing) miners would earn 1.8ETH in fees + 0.5ETH block reward, for a total of 2.3ETH per block. 
 
 
 ## Backwards Compatibility
@@ -77,9 +77,9 @@ All nodes must be upgraded to reflect the change in the block reward.
 ## Security Considerations
 Changing the block reward is purely an economic action, requiring only a change to the block reward parameter.
 
-Economically speaking, a block reward that is too low may result in low miner participation, which may result in a decrease of network security that may put PoW blockchains at risk of 51% re-org attacks. 
+Economically speaking, a block reward that is too low may result in low miner participation due to insufficient financial incentives.  This may result in a decrease of network security that may put PoW blockchains at risk of 51% re-org attacks. 
 
-In this EIP we have laid out our economic evidence that reducing the block reward to 0.5 ETH would not negatively affect security by comparing it to other blockchains with larger market capitalizations.  In fact, just the opposite.  Since Miners' expenses for housing and electricity are priced in FIAT terms (no electrical utilities in the in the world currently charge for Kilowatt-Hours in ETH), they thus base their mining on revenues they will earn in FIAT terms. In $USD terms, miners would still be paid more than they were 3 months ago if this EIP were accepted.  Thus, with this EIP, mining security economics are still better than they were 3 months ago when the price of ETH was half of what it is now, and the transaction fees were a fraction of their current value. 
+In this EIP we have laid out our economic evidence that reducing the block reward to 0.5 ETH would not negatively affect security by comparing it to other blockchains with larger market capitalizations.  Furthurmore, we note that Miners' expenses for housing and electricity are priced in FIAT terms (no electrical utilities in the in the world currently charge for Kilowatt-Hours in ETH), they thus base their mining decisions on FIAT revenues they expect to earn. In $USD terms, miners would still be paid more than they were 3 months ago if this EIP were accepted (and still more than the 12 month average).  Thus, with this EIP, mining security economics are still better than they were 3 months ago when the price of ETH was half of what it is now, and the transaction fees were a fraction of their current value. 
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
