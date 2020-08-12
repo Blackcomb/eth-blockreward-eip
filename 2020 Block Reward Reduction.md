@@ -1,7 +1,7 @@
 ---
 eip: <to be assigned>
 title: 2020 Block Reward Reduction to 0.5 ETH
-author: John Lilic @jlilic johnlilicEIP@gmail.com, Others Privately
+author: John Lilic @jlilic johnlilicEIP@gmail.com, Others
 discussions-to: 
 status: Draft
 type: Standards Track
