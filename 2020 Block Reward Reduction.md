@@ -33,8 +33,8 @@ At the time of writing, there were 110,875,500 Ether in circulation.  There are 
 
 The result of this comparison shows that Ethereum is currently paying a 2.52x higher block reward than Bitcoin.
 
-To further illustrate the point, if the ETH/BTC ratio increases to 0.041, all else equal, Ethereum will be paying a higher reward in $USD than bitcoin, despite being 5 times smaller in Market Capitalization.
- Sometime after July 2020, the Ethereum 2.0 Phase 0 chain will launch.  This chain will further add to the inflation rate of Ethereum, as it will generate staking rewards for all users that stake a deposit and validate blocks on the chain. 
+To further illustrate the point, if the ETH/BTC ratio increases to 0.041, all else equal, Ethereum will be paying a higher reward in $USD than bitcoin, despite being 3 times smaller in Market Capitalization.
+ Sometime after November 2020, the Ethereum 2.0 Phase 0 chain will launch.  This chain will further add to the inflation rate of Ethereum, as it will generate staking rewards for all users that stake a deposit and validate blocks on the chain. 
 
 The annual issuance from staking rewards is planned to be equal to 181 * SQRT(total ETH staked).  A chart below illustrates some possible values.
 
@@ -64,9 +64,10 @@ With a targeted block time of 13s, there are approximately 60*60*24 / 13.1 = 6,6
 
 According to Etherscan, uncle rewards are responsible for approximately 5% of the total daily reward emission. Therefore, the base block subsidy should be 0.5776 * 0.95 = 0.549.
 
-Thus, we arrive at a rate of 0.55 ETH base block reward to match Bitcoin’s inflation rate, and suggest rounding down to 0.5 ETH as the parameter for the new block reward.
+Thus, we arrive at a rate of 0.55 ETH base block reward to match Bitcoin’s inflation rate. 
 
-We also note, on August 11 2020, at the time of publishing this EIP, the fees from transactions make up almost 80% the current block rewards (2ETH). Thus, even if the block reward was set to ZERO, miners would still earn 1.8ETH from transaction fees per block!
+We also note however, that the transaction fee market for Ethereum has risen sharply this year. As of August 11 2020, at the time of publishing this EIP, the fees from transactions make up almost 80% the current block rewards (2ETH). Thus, even if the block reward was set to ZERO, miners would still earn 1.8ETH from transaction fees per block.  We thus prepose to round to round down our block reward calculation from 0.55 to 0.5, which means (at the time of writing) miners would earn 1.8ETH in fees + 0.5ETH block reward, for a total of 2.3ETH per block. 
+
 
 ## Backwards Compatibility
 All nodes must be upgraded to reflect the change in the block reward.
